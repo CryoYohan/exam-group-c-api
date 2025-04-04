@@ -7,13 +7,15 @@ router.post('/exams', (req, res) => {
 });
 
 router.get('/exams', (req, res) => {
-    const exam = req.body
+    const exams = req.body
     res.status(200).json(exams);
 }); 
 
-//awdawdawd
-
-
+router.put('/exams/:id', (req, res) => {
+    const examId = req.params.id;
+    const updatedExam = req.body;
+    res.status(200).json({ message: `Exam ${examId} updated successfully`, data: updatedExam });
+}); 
 
 router.get('/', (req, res) => {
     res.send('Welcome to the route!');
