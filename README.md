@@ -8,3 +8,6 @@ Features:
     POST/exams: Montemar, Jherick
     GET/exams: Wenceslao, Kent
     PUT/exam:id : Doblas, Ken Harvey
+
+Merged Conflict:
+    ypil-branch and wenceslao-branch conflicted with main. Resolved!
