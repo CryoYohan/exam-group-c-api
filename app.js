@@ -1,2 +1,9 @@
 import express from "express"
-app = express.Router()
+
+const app = express();
+const port = 3000;
+
+
+app.listen( port, () =>{
+    console.log(`Server listening at port http://localhost:${port}...`)
+})
