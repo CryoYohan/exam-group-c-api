@@ -1,9 +1,13 @@
-import express from "express"
-
+const express = require('express');
 const app = express();
-const port = 3000;
 
+const route = require('./routes/route');
 
-app.listen( port, () =>{
-    console.log(`Server listening at port http://localhost:${port}...`)
-})
+// Use the route
+app.use('/route', route);
+
+// Start the server
+const PORT = 3000;
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
