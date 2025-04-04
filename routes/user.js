@@ -18,7 +18,7 @@ router.put('/exams/:id', (req, res) => {
 }); 
 
 router.get('/', (req, res) => {
-    res.send('Welcome to the routerdzx!');
+    res.send('Welcome to the routerrraaAAAAAAAAA CONFLICTTT!');
 });
 
 module.exports = router;
